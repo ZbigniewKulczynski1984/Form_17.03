@@ -3,7 +3,7 @@
 ## Technology used
 - HTML
 - CSS
--JS
+- JS
 
 ## Author 
 ### Zbigniew Kulczyński
