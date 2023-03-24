@@ -71,3 +71,11 @@ number.addEventListener('keyup', (e) => {
 		output.textContent = 'You study less than 4 years, you can let us know what sport do you like :)';
 	}
 });
+
+btn.addEventListener('click', () => {
+	test()
+	h1.remove();
+	btn.remove();
+	output.textContent = 'Thank you for filling up the form, have a nice day :)';
+});
+
