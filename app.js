@@ -18,6 +18,19 @@ const arrInputs2 = [...trueInputs];
 
 const arrQuest = [...questions];
 
+function test() {
+	// arrInputs[0].setAttribute('disabled', 'disabled');
+	arrQuest[0].remove();
+	arrQuest[1].remove();
+	arrQuest[2].remove();
+	arrQuest[3].remove();
+	arrQuest[4].remove();
+	arrQuest[5].remove();
+	arrQuest[6].remove();
+	h1.remove();
+	btn.remove();
+}
+
 function checkAnswer() {
 	if (1 < 2) {
 		arrInputs[0].addEventListener('click', test);
@@ -78,4 +91,3 @@ btn.addEventListener('click', () => {
 	btn.remove();
 	output.textContent = 'Thank you for filling up the form, have a nice day :)';
 });
-
