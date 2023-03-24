@@ -35,3 +35,39 @@ function checkAnswer2() {
 	}
 }
 checkAnswer2();
+
+arrQuest[1].addEventListener('keyup', (e) => {
+	console.log(e);
+	if (
+		e.keyCode === 73 ||
+		e.keyCode === 84 ||
+		e.keyCode === 16 ||
+		e.keyCode === 13
+	) {
+		// e.preventDefault()
+	} else {
+		test()
+		h1.remove();
+		btn.remove();
+		output.textContent = "You are Student, but seems like You don't study on IT field. Goodbye!!!";
+	}
+});
+
+number.addEventListener('keyup', (e) => {
+	console.log(e);
+	if (
+		e.keyCode === 49 ||
+		e.keyCode === 50 ||
+		e.keyCode === 51 ||
+		e.keyCode === 52
+	) {
+		arrQuest[0].remove();
+		arrQuest[1].remove();
+		arrQuest[2].remove();
+		arrQuest[3].remove();
+		arrQuest[4].remove();
+		arrQuest[5].remove();
+		h1.remove();
+		output.textContent = 'You study less than 4 years, you can let us know what sport do you like :)';
+	}
+});
