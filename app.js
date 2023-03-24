@@ -17,3 +17,21 @@ const arrInputs2 = [...trueInputs];
 // console.log(arrInputs2);
 
 const arrQuest = [...questions];
+
+function checkAnswer() {
+	if (1 < 2) {
+		arrInputs[0].addEventListener('click', test);
+		output.textContent = 'Sorry, you are not a Student... Goodbye!!!';
+	}
+}
+checkAnswer();
+
+function checkAnswer2() {
+	if (1 < 2) {
+		arrInputs[1].addEventListener('click', () => {
+			arrQuest[5].remove();
+			output.remove()
+		});
+	}
+}
+checkAnswer2();
